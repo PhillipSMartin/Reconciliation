@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ReconciliationClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PositionFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WSB820TT.CST138PO.CSV</Value>
+    </Setting>
+    <Setting Name="ConfirmationFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WSB821TT.CST138TR.CSV</Value>
+    </Setting>
+    <Setting Name="ImportDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\gargoyle-mw05\downloads</Value>
+    </Setting>
+    <Setting Name="TraderName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">JNikolova</Value>
+    </Setting>
+    <Setting Name="BookkeepingFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WSB822TT.CST138BK.CSV</Value>
+    </Setting>
+    <Setting Name="ApplicationName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ReconciliationClient</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Hugo</Value>
+    </Setting>
+    <Setting Name="MailFrom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jnikolova@gargoylestrategic.com</Value>
+    </Setting>
+    <Setting Name="MailTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MLAMEXBREAKS@win.ml.com,jnikolova@gargoylestrategic.com</Value>
+    </Setting>
+    <Setting Name="MailSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Gargoyle corrections</Value>
+    </Setting>
+    <Setting Name="ReportsDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\temp</Value>
+    </Setting>
+    <Setting Name="UpgradeSettings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AssignmentsFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WST423TM.CST13ASG.CSV</Value>
+    </Setting>
+    <Setting Name="SendReportToTraders" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DebugMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ConsolidateStocks" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ConsolidateOptions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TaxlotsFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POTL_05212012.POTL</Value>
+    </Setting>
+    <Setting Name="LiquidConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">server=172.20.151.21;userid=gargoyle;password=3CoNeOTo;database=gargoyle</Value>
+    </Setting>
+    <Setting Name="DividendsFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">F1957488.Corporate_Actions.20180426.csv</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9238BE5-FCC1-4B6D-AAFB-B5585B172841}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReconciliationLib</RootNamespace>
+    <AssemblyName>ReconciliationLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <CodeAnalysisRuleSet>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\Rule Sets\MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LoggingUtilitiesLib">
+      <HintPath>S:\Lib\LoggingUtilitiesLib.dll\1.0.0.0\1.0.0.2\LoggingUtilitiesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>S:\Lib\LumenWorks.Framework.IO.dll\1.0.0.1\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABRecordCollection.cs" />
+    <Compile Include="AccountGroupInfo.cs" />
+    <Compile Include="BookkeepingRecord.cs" />
+    <Compile Include="ClearingHouses\BONY.cs" />
+    <Compile Include="ClearingHouse.cs" />
+    <Compile Include="ClearingHouses\ClearingHouseBase.cs" />
+    <Compile Include="ClearingHouseFactory.cs" />
+    <Compile Include="ClearingHouses\Hugo.cs" />
+    <Compile Include="ClearingHouses\IB.cs" />
+    <Compile Include="ClearingHouses\ICBC.cs" />
+    <Compile Include="ClearingHouses\MorganStanley.cs" />
+    <Compile Include="ConfirmationRecord.cs" />
+    <Compile Include="ConvertExt.cs" />
+    <Compile Include="CSVtoXMLConverter.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="DividendRecord.cs" />
+    <Compile Include="EditedFuturesTrade.cs" />
+    <Compile Include="EditedOptionTrade.cs" />
+    <Compile Include="EditedStockTrade.cs" />
+    <Compile Include="FixedLengthCustomDateField.cs" />
+    <Compile Include="FixedLengthDoubleField.cs" />
+    <Compile Include="FixedLengthField.cs" />
+    <Compile Include="FixedLengthSignedDoubleField.cs" />
+    <Compile Include="FuturesTrade.cs" />
+    <Compile Include="HugoDataSet.cs">
+      <DependentUpon>HugoDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HugoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HugoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IABRecord.cs" />
+    <Compile Include="ImportStatusInfo.cs" />
+    <Compile Include="ClearingHouses\Liquid.cs" />
+    <Compile Include="Interfaces\IBookkeepingTableAdapter.cs" />
+    <Compile Include="Interfaces\IClearingHouse.cs" />
+    <Compile Include="Interfaces\IConfirmationRecordCollection.cs" />
+    <Compile Include="Interfaces\IConfirmationTableAdapter.cs" />
+    <Compile Include="Interfaces\IDividendTableAdapter.cs" />
+    <Compile Include="Interfaces\IDividendRecordCollection.cs" />
+    <Compile Include="Interfaces\IFuturesTrade.cs" />
+    <Compile Include="Interfaces\IHugoTableAdapter.cs" />
+    <Compile Include="Interfaces\IOption.cs" />
+    <Compile Include="Interfaces\IOptionTrade.cs" />
+    <Compile Include="Interfaces\IPositionRecordCollection.cs" />
+    <Compile Include="Interfaces\IPositionTableAdapter.cs" />
+    <Compile Include="Interfaces\IStockTrade.cs" />
+    <Compile Include="Interfaces\ITaxlotRecordCollection.cs" />
+    <Compile Include="Interfaces\ITaxlotTableAdapter.cs" />
+    <Compile Include="Interfaces\ITrade.cs" />
+    <Compile Include="Interfaces\IUnderlying.cs" />
+    <Compile Include="OptionTrade.cs" />
+    <Compile Include="ClearingHouses\Pershing.cs" />
+    <Compile Include="PershingAggregatedTaxlotRecord.cs" />
+    <Compile Include="PershingAggregatedTaxlotRecordCollection.cs" />
+    <Compile Include="PershingConfirmationRecord.cs" />
+    <Compile Include="PershingConfirmationRecordCollection.cs" />
+    <Compile Include="PershingPositionRecord.cs" />
+    <Compile Include="PershingPositionRecordCollection.cs" />
+    <Compile Include="PositionRecord.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReconciliationConvert.cs" />
+    <Compile Include="ReconciliationException.cs" />
+    <Compile Include="RecordType.cs" />
+    <Compile Include="StockTrade.cs" />
+    <Compile Include="TablesUpdatedEventArgs.cs" />
+    <Compile Include="TaskStatus.cs" />
+    <Compile Include="TaxlotRecord.cs" />
+    <Compile Include="ClearingHouses\TCW.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="ClearingHouses\WellsFargo.cs" />
+    <Compile Include="WellsFargoConfirmationRecord.cs" />
+    <Compile Include="WellsFargoPositionRecord.cs" />
+    <Compile Include="XLStoXMLConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="HugoDataSet.xsc">
+      <DependentUpon>HugoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HugoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HugoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HugoDataSet.xss">
+      <DependentUpon>HugoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
